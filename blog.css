@@ -1,0 +1,110 @@
+/* CSS untuk tampilan dasar blog resep makanan */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Hero Content */
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #666;
+}
+/* Navigation Bar */
+nav {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin-left: 30px;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+    color: #007BFF;
+}
+
+main {
+    padding: 20px;
+}
+
+#recipes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.recipe-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-card-content {
+    padding: 15px;
+}
+
+.recipe-card h3 {
+    margin: 0 0 10px;
+    color: #ff6347;
+}
+
+button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #e5533a;
+}
+footer {
+    background-color: #ff6347;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

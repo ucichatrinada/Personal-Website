@@ -1,0 +1,158 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #ffffff, #f8f9fa);
+    color: #333;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+nav {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin-left: 30px;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+    color: #007BFF;
+}
+
+/* Hero Content */
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+/* Buttons */
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #007BFF;
+    color: #007BFF;
+}
+
+.btn-secondary:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    nav {
+        right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-buttons {
+        width: 100%;
+        gap: 10px;
+    }
+
+    nav .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+   
+    nav .nav-links li {
+        margin: 10px;
+    }
+}
+
+.social-icons {
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+    font-size: 1.5rem;
+    color: black;
+    justify-content: center;
+}
+.social-icons a {
+    margin-top: 95px;
+    font-size: 2rem;
+}
+
+.social-icons a{
+    color: black;
+}
+.social-icons a:hover {
+    color: blue;
+}

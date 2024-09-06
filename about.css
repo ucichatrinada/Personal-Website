@@ -1,0 +1,103 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+/* Navigation Bar */
+nav {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin-left: 30px;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+    color: #007BFF;
+}
+
+.about-me {
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.profile-img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 0px solid #007BFF;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan abu-abu */
+}
+
+
+.profile-info {
+    max-width: 600px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}

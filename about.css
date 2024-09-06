@@ -6,14 +6,11 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
 body {
     background-color: #f4f4f4;
     color: #333;
     font-family: 'Playfair Display', serif;
 }
-
-
 
 /* Navigation Bar */
 nav {
@@ -75,7 +72,6 @@ nav .nav-links a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan abu-abu */
 }
 
-
 .profile-info {
     max-width: 600px;
     text-align: left;
@@ -100,4 +96,49 @@ footer {
     position: absolute;
     width: 100%;
     bottom: 0;
+}
+
+/* Media Query untuk Tablet */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav {
+        position: static;
+        margin: 20px 0;
+    }
+
+    nav .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .profile-img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile-info {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    footer {
+        position: static;
+        margin-top: 20px;
+    }
 }
